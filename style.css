@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Staatliches', cursive;
+}
+
+.home{
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+nav{
+    text-align: center;
+    padding-top: 5em;
+}
+
+.logo{
+    display: inline-block;
+    font-size: 3em;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 2em;
+    color: #ffffff;
+    margin: 0 50px;
+    transition: 0.2s;
+}
+
+nav a:hover{
+    color: #31afa7;
+    font-size: 2.5em;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.content .spn-1{
+    font-size: 5em;
+    color: #ffffff;
+    margin: 0 0 40px 0;
+    letter-spacing: 0.1em;
+}
+
+.content .spn-2{
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #31afa7;
+    font-size: 4em;
+}
+
+@media (max-width:976px){
+    nav{
+        padding-top: 3em;
+    }
+    .logo{
+        font-size: 2.2em;
+    }
+    nav a{
+        font-size: 1.5em;
+        margin: 0 40px;
+    }
+    nav a:hover{
+        font-size: 2em;
+    }    
+}
+
+@media (max-width:826px){
+    nav{
+        padding-top: 2em;
+    }
+    .logo{
+        font-size: 2em;
+    }
+    nav a{
+        font-size: 1.4em;
+        margin: 0 30px;
+    }
+    nav a:hover{
+        font-size: 1.7em;
+    }
+    .content .spn-1{
+        font-size: 3em;
+    }
+    
+    .content .spn-2{
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width:644px){
+    .logo{
+        font-size: 1.8em;
+    }
+    nav a{
+        font-size: 1.2em;
+        margin: 0 20px;
+    }
+    nav a:hover{
+        font-size: 1.5em;
+    }    
+}
+
+@media (max-width:538px){
+    nav{
+        background: #1a535c;
+        padding-bottom: 30px;
+    }
+    nav a{
+        display: block;
+        font-size: 1.2em;
+        margin: 20px 20px;
+    }
+    .content {
+        top: 65%;
+        left: 50%;
+    }
+    .content .spn-1{
+        font-size: 2.5em;
+        letter-spacing: 0.05em;
+    }
+    .content .spn-2{
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage with Typing Animation Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <span class="logo">Hashemidev</span>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="content">
+            <span class="spn-1">Typing Effect</span>
+            <span class="spn-2"><span class="typed"></span></span>
+        </div>
+    </div>
+
+    <script src="./typed.js"></script>
+    <script>
+        var typed = new Typed('.typed', {
+            strings: [
+                    "^1000 My name is Mohammad. ^1000",
+                    "^1000 I'm 19 year's old. ^1000",
+                    "^1000 I am Front-end Developer. ^1000"
+                    ],
+             typeSpeed: 60,
+             backSpeed: 70,
+             loop: true
+        });
+    </script>
+</body>
+</html>
